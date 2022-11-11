@@ -1,0 +1,38 @@
+extend base.pug
+
+block styles 
+           style 
+             include ../statics/css/contact.css
+
+block content           
+      div
+         div.cd
+             | CONTACT-US
+         p.cd2  For contact please fill this contact form and form given below 
+         div.contactUs
+             form.fr(action="/contact" method="post")
+              div.details  
+                label(for="name") Name :- 
+                input(type="text" name="myname" placeholder="enter your name ")
+             
+                   
+              div.details 
+                label(for="email") Email id :- 
+                input(type="email" name="myemail" placeholder="enter your email")
+              div.details 
+                label(for="contact") Contact No. :- 
+                input(type="contact" name="mycontact" placeholder="enter your contact no.")
+              div.details 
+                label(for="address") Address :- 
+                input(type="address" name="myaddress" placeholder="enter your Address")
+                     
+                div.submitbtn     
+                 button(id="dbtn" , name="item") submit now 
+            
+             
+               
+               
+
+           
+        
+         

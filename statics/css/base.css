@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Roboto+Mono:wght@500&family=Roboto:wght@300&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+}
+
+
+body{
+    width: 100%;
+    height: inherit;
+    background:rgb(44 44 44 / 20%)  url('/img/bg.jpg') no-repeat center  center/cover ;
+    
+   
+}
+
+
+#items {
+
+    display: flex;
+    /* width: 100vw;
+        background-color: aqua; */
+    flex-direction: row;
+    align-items: center;
+    padding: 0.937rem;
+
+
+}
+
+.dance {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: center;
+
+}
+
+
+.danceacedemy a {
+    /* color: rgb(255, 154, 154); */
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 0.9rem;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+
+}
+.containerham{
+    display: none;
+}
+
+.ls {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2.8rem;
+}
+
+.ls li {
+    list-style: none;
+}
+
+.ls li a {
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto@500', sans-serif
+}
+
+.ls li a:hover {
+    color: rgb(71, 71, 250);
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.button {
+
+    position: sticky;
+    left: 83VW;
+
+
+}
+
+.btn {
+
+    border: blue solid 2px;
+    border-radius: 1.25rem;
+    padding: 0.75rem;
+    margin: 0rem 0.625rem;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: blue;
+    font-size: 1rem;
+
+
+}
+
+.hr {
+    position: sticky;
+}
+
+/* .containerham{
+    display: none;
+} */
+.hr2{
+    display: none;
+}
+#ft p{
+    /* position: absolute;
+    top: 190vh;
+     */
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    
+    
+    
+}
+#ft1{
+   
+    width: 100%;
+    height: inherit;
+    padding: 0.5rem 0;
+    background-color: rgb(21, 21, 43);
+    margin-top: 20rem;
+    
+      /* overflow: hidden; */
+}
+ #ft {
+    /* margin-bottom: 2rem; */
+ }
+ #ft ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.2rem;
+
+ }
+ #ft ul li{
+    list-style:  none;
+ }
+ #ft ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 2.5rem;
+    color: white;
+ }
+  
+
+
+
+
+ .sidebar{
+    
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    width: 270px;
+    height: 150vh;
+    z-index: 1;
+    background-color: rgb(195, 211, 255);
+ }
+.sidels{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0rem;
+  right: 2rem;
+}
+.sidels li{
+   list-style: none;
+   margin: 1rem;
+   margin-left: 2rem;
+   margin-top: 3rem;
+  }
+.sidels li a{
+    text-decoration: none;
+font-size: 1.5rem;
+padding: 1.5rem;
+color: black;
+font-weight: 600;
+}
+.sidebargo{
+   display: none;
+}
+    
+.sidebarbox4{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgclose{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+
+}
+.imgclose img{
+      width: 35px;
+      height: 30px;
+}
+.imgopen img{
+    width: 40px;
+    height: 30px;
+    margin: 1rem;
+    margin-right: 2rem;
+}
+.sidebarbtn{
+    margin-top: 4rem;
+    
+}
+.sidetitle a{
+    font-size: 1.4rem;
+    font-family: 'Pacifico', cursive;
+    margin-left: 2rem;
+    
+}
+
+ @media screen and (max-width: 950px) {
+    .head{
+        display: none;
+    }
+    .hr2{
+        display: block;
+    }
+    .containerham{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     align-items: center;
+
+    }
+
+    .hambox3 p a{
+        /* color: rgb(255, 154, 154); */
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 1.2rem;
+        font-weight: bold;
+        font-family: 'Pacifico', cursive;
+    
+    }
+
+      
+    
+ }
+@media screen and (max-width: 503px) {
+     .hambox3 p a {
+        font-size: 1.7rem;
+    }
+
+    #ft ul li a{
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .hambox3 p {
+       
+       width: 50px;
+       margin-left: 2rem;
+   }
+}
+@media screen and (max-width: 340px) {
+    .hambox3 p{
+       
+       width: 50px;
+       margin-left: 1rem;
+   }
+
+   .hambox3  p a {
+    font-size: 1.4rem;
+   }
+  
+  #ft ul{
+    flex-direction: column;
+    
+  }
+  #ft ul li{
+    margin: 0.5rem;
+  }
+  .sidebar{
+    width: 240px;
+  }
+  .sidebarbtn{
+    margin-left: 1.5rem;
+  }
+.sidebarbtn  .btn{
+   margin: 1rem;
+
+}
+
+}
+
+
+
+@media screen and (min-height:1100px){
+    #ft1{
+        position: absolute;
+        bottom: 0;
+        height: 20vh;
+    }
+    #ft p{
+        margin-top: 2rem;
+    }
+}

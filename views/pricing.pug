@@ -1,0 +1,53 @@
+extend base.pug
+
+block styles 
+           style 
+             include ../statics/css/princing.css
+
+block content           
+      div
+         div.price
+             p OUR PLANS
+         div.pricecontainer    
+            div.pricebox#box1 
+               div.plan Weekly Plan
+               hr
+               div.planprice $20/week
+               div.ul
+                   ul 
+                      li best trainer
+                      li good facilites
+                      li all music instrument available
+               button.pbtn#pbtn1   Enroll Now 
+               
+            div.pricebox#box2 
+               div.plan Monthly Plan
+               hr
+               div.planprice $50/month
+               div.ul(type="square")
+                   ul 
+                      li best trainer
+                      li good facilites
+                      li all music instrument available
+               button.pbtn#pbtn2   Enroll Now 
+            div.pricebox#box3 
+               div.plan Yearly Plan
+               hr
+               div.planprice $100/year 
+               div.ul
+                   ul 
+                      li best trainer
+                      li good facilites
+                      li all music instrument available
+               button.pbtn#pbtn3   Enroll Now 
+            div.pricebox.box4 
+               div.plan Exclusive  Plan
+               hr
+               div.planprice $200 for 5year
+               div.ul
+                   ul 
+                      li best trainer
+                      li good facilites
+                      li all music instrument available
+               button.pbtn#pbtn4   Enroll Now 
+
